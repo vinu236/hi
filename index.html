@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form action="message.html">
+<label for=""></label>
+<div id="error" style="color: red;"></div>
+<input type="text" id="uname">
+<button type="submit" onclick="validate()">submit</button>
+  </form>
+</body>
+<script>
+    function validate(){
+        let username=document.getElementById('uname')
+        if(username.value==""){
+            let mes=document.getElementById('error')
+            mes.innerHTML="empty field"
+        }
+    }
+</script>
+</html>
